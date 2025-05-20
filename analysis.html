@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrashAnalysis - Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CrashAnalysis </h1>
+        <button class="back-button" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+    </div>
+
+    <div class="content">
+        <!-- RoadAccident Insights Section -->
+        <div class="section">
+            <h2>RoadAccident Insights</h2>
+            <p>This page displays road accident data for detailed analysis. Explore the interactive features below!</p>
+        </div>
+
+        <!-- Road Safety Quiz -->
+        <div class="section">
+            <h2>🚦 Road Safety Quiz</h2>
+            <div class="quiz-container">
+                <form id="quizForm">
+                    <div class="question">
+                        <p>1. What should you do at a pedestrian crossing?</p>
+                        <label><input type="radio" name="q1" value="safe"> Slow down and stop if needed</label>
+                        <label><input type="radio" name="q1" value="risky"> Continue at the same speed</label>
+                    </div>
+                    <div class="question">
+                        <p>2. How often should brakes be checked?</p>
+                        <label><input type="radio" name="q2" value="safe"> Monthly</label>
+                        <label><input type="radio" name="q2" value="risky"> Only when the car feels strange</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="result"></p>
+            </div>
+        </div>
+
+        <!-- Interactive Timeline -->
+        <div class="section">
+            <h2>🕒 Major Road Accidents Timeline</h2>
+            <div class="timeline">
+                <div class="event">
+                    <h3>🚗 1997 - UK Multi-Vehicle Crash</h3>
+                    <p>One of the biggest pile-ups, involving over 50 cars due to heavy fog.</p>
+                </div>
+                <div class="event">
+                    <h3>🚌 2005 - Mumbai Bus Accident</h3>
+                    <p>A devastating bus collision that led to major reforms in traffic laws.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Forum -->
+        <div class="section">
+            <h2>💬 Road Safety Forum</h2>
+            <form id="forumForm">
+                <input type="text" id="username" placeholder="Your Name" required />
+                <textarea id="message" placeholder="Share your thoughts or concerns..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+            <div id="forumPosts"></div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="forum.js"></script>
+</body>
+</html>

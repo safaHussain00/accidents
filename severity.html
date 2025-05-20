@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severity Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🚦 Traffic Severity Predictor</h1>
+    </div>
+
+    <div class="content">
+        <p class="subtitle">This app predicts accident severity to improve road safety. Fill in the details below:</p>
+
+        <form id="predictionForm">
+            <div class="input-group">
+                <label for="distance" class="form-label">Enter Distance (mi)</label>
+                <input type="text" id="distance" name="distance" class="form-input" required>
+            </div>
+
+            <div class="input-group">
+                <label for="temperature" class="form-label">Enter Temperature (F)</label>
+                <input type="text" id="temperature" name="temperature" class="form-input" required>
+            </div>
+
+            <div class="input-group">
+                <label for="weather_condition" class="form-label">Weather Condition</label>
+                <input type="text" id="weather_condition" name="weather_condition" class="form-input" required>
+            </div>
+
+            <input type="submit" value="PREDICT SEVERITY" class="submit-button">
+        </form>
+
+        <div id="output" class="output-box" style="display: none;"></div>
+
+        <!-- Back to Dashboard Button -->
+        <button class="back-button" onclick="window.location.href='dashboard.html'">⬅ Back to Dashboard</button>
+    </div>
+
+    <script src="severity.js"></script>
+</body>
+</html>

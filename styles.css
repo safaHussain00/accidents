@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #EDF2F4, #cfd8dc);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #008080, #2E8B57);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Content Sections */
+.content {
+    width: 90%;
+    max-width: 450px;
+    margin-top: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8D99AE;
+    border-radius: 8px;
+    background-color: #EDF2F4;
+    color: #333;
+}
+
+/* Buttons */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #4f9f86;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 22px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 20px;
+    }
+
+    .form-input {
+        padding: 10px;
+    }
+
+    .submit-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

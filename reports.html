@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrashAnalysis - Report an Accident</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="reports.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>CrashAnalysis - Report an Accident</h1>
+        <button class="back-button" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Report Accident Details</h2>
+            <form id="reportForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+                <label for="time">Time:</label>
+                <input type="datetime-local" id="time" name="time" required>
+
+                <label for="severity">Severity:</label>
+                <select id="severity" name="severity" required>
+                    <option value="" disabled selected>Select severity</option>
+                    <option value="minor">Minor</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+
+                <label for="vehicle">Vehicle(s) Involved:</label>
+                <input type="text" id="vehicle" name="vehicle" placeholder="e.g., Car, Truck" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Provide a detailed description" rows="4" required></textarea>
+
+                <label for="witnesses">Witnesses:</label>
+                <input type="text" id="witnesses" name="witnesses" placeholder="Add witness names (if any)">
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

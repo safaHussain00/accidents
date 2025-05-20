@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Accident Analysis - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Account</h1>
+        <form id="signupForm">
+            <input type="text" id="newUsername" placeholder="Username (5-15 characters)" required pattern="^[a-zA-Z0-9_]{5,15}$" title="Username must be 5-15 characters long and contain only letters, numbers, or underscores." />
+
+            <input type="email" id="newEmail" placeholder="Enter your email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address." />
+
+            <input type="password" id="newPassword" placeholder="Create a strong password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Password must be at least 8 characters long and include letters, numbers, and special characters." />
+
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+
+            <button type="submit">Sign Up</button>
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
